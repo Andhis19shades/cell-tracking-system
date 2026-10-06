@@ -1,0 +1,33 @@
+html,
+body,
+#root {
+  margin: 0;
+  min-height: 100%;
+  width: 100%;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+::selection {
+  background: rgba(57, 230, 186, 0.25);
+  color: white;
+}
+
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background: #07110f;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1d3830;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #2d5548;
+}

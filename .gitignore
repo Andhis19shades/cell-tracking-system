@@ -1,0 +1,37 @@
+# React
+frontend/node_modules/
+frontend/build/
+frontend/dist/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+env/
+
+# Large uploaded/temporary videos
+backend/uploads/
+
+# Local Python environments
+dataset/cellpose_env/
+
+# macOS
+.DS_Store
+
+# Logs
+*.log
+
+# IDE
+.vscode/
+.idea/
+
+# Environment / secrets
+.env
+.env.*
+
+# Generated temporary files
+tmp/
+temp/
+backend/analysis/
+backend/analysis/

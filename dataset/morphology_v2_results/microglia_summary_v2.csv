@@ -1,0 +1,11 @@
+Metric,Value,Unit
+Cells analyzed,84.0,cell observations
+Mean cell area,194.29970238095237,µm²
+Mean perimeter,116.80413078800554,µm
+Mean circularity,0.2103340934821572,dimensionless
+Mean solidity,0.6229087444628238,dimensionless
+Mean skeleton/process length,91.86322996472002,µm
+Mean branch points,10.976190476190476,junctions/cell
+Mean endpoints,11.273809523809524,endpoints/cell
+Mean maximum process reach,17.090776771037376,µm
+Mean Sholl maximum,9.845238095238095,intersections

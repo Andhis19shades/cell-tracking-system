@@ -1,0 +1,25 @@
+QUANTITATIVE CELL MOTION ANALYSIS
+========================================
+
+Video: video_0.avi
+Resolution: 938 x 1094
+FPS: 8.00
+Frames: 800
+Duration: 100.00 seconds
+
+DETECTION STATISTICS
+----------------------------------------
+Average cells/frame: 9.23
+Maximum cells/frame: 57
+Average moving cells/frame: 7.18
+Average cell area: 16280.27 px²
+
+MOTION STATISTICS
+----------------------------------------
+Average speed: 156.59 px/s
+Maximum speed: 359.70 px/s
+Tracked objects: 1077
+
+NOTE
+----------------------------------------
+Speed is reported in pixels/second because microscope pixel-size calibration has not been provided.
