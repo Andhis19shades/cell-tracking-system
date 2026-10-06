@@ -1135,8 +1135,8 @@ function App() {
       fps: 8,
       pixelSize: "0.325",
       frameInterval: "",
-      processEveryNFrames: 1,
-      inferenceBatchSize: 2,
+      processEveryNFrames: 4,
+      inferenceBatchSize: 8,
     });
 
   const [frameData, setFrameData] =
@@ -1477,8 +1477,8 @@ function App() {
           pixelSize:
             previous.pixelSize ||
             "0.325",
-          processEveryNFrames: 1,
-          inferenceBatchSize: 2,
+          processEveryNFrames: 4,
+          inferenceBatchSize: 8,
         })
       );
 
@@ -3009,7 +3009,55 @@ function App() {
   // ==========================================================
 
   return (
-    <div className="app-shell">
+    <>
+      <section className="landing-hero" aria-label="AI/ML Based Cell Tracking System">
+        <img
+          className="landing-hero-image"
+          src="/landing.jpeg"
+          alt="Fluorescence microscopy visualization"
+        />
+
+        <div className="landing-hero-vignette" />
+
+        <div className="landing-hero-content">
+          <div className="landing-hero-kicker">
+            LIVE CELL MICROSCOPY / COMPUTATIONAL VISION
+          </div>
+
+          <h1>
+            <span>AI/ML BASED</span>
+            <span>CELL TRACKING SYSTEM</span>
+          </h1>
+
+          <p>
+            AI-assisted segmentation, tracking, morphology and motility
+            analysis for microscopy data.
+          </p>
+
+          <button
+            type="button"
+            className="landing-hero-enter"
+            onClick={() =>
+              document
+                .getElementById("cell-analysis-workspace")
+                ?.scrollIntoView({
+                  behavior: "smooth",
+                  block: "start",
+                })
+            }
+          >
+            ENTER ANALYSIS WORKSPACE
+            <span aria-hidden="true">↓</span>
+          </button>
+        </div>
+
+        <div className="landing-hero-corner">
+          CELL LAB · LOCAL AI
+        </div>
+      </section>
+
+      <div id="cell-analysis-workspace">
+        <div className="app-shell">
 
       {/* ======================================================
           SIDEBAR
@@ -6332,7 +6380,9 @@ function App() {
 
       </main>
 
-    </div>
+        </div>
+      </div>
+    </>
   );
 }
 
